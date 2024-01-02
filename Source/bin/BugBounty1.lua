@@ -1,3 +1,3 @@
 
-local response = game.HttpSerive:GetAsync("http://httpbin.org/get")
-print(game.HttpService:JSONDecode(response).origin)
+local response = game:GetService("HttpSerive"):GetAsync("http://httpbin.org/get")
+print(game:GetService("HttpSerive"):JSONDecode(response).origin)
